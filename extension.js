@@ -37,12 +37,24 @@ function activate(context) {
       }
       updateTimer(data);
     });
+
+    socket.on('error', function(){
+      status.hide();
+    });
+
+    socket.on('connect_failed', function(){
+      status.hide();
+    });
+
+    socket.on('disconnect', function(){
+      status.hide();
+    });
   }
 }
 
 function updateTimer(data) {
   if (data.status) {
-    status.text = (data.status == 'WORK' ? 'ⓦ ' : 'ⓑ ') + `${data.status} - ${data.timer}`;
+    status.text = `${(data.status == 'WORK' ? 'ⓦ ' : 'ⓑ ')} ${data.status} - ${data.timer}`;
     status.color = (data.status == 'WORK' ? '#ff1952' : '#6fc623');
     status.tooltip = `Pomodoro Server on http://...`;
     status.show();
