@@ -2,9 +2,9 @@
     "name": "vscode-mpanjifa-votabia",
     "displayName": "vscode-mpanjifa-votabia",
     "description": "VSCode client for votabia pomodoro server https://github.com/tagip/votabia",
-    "version": "0.1.0",
+    "version": "0.4.0",
     "publisher": "mikaoelitiana",
-    "icon": "./images/icon256X256.png",
+    "icon": "images/icon256x256.png",
     "engines": {
         "vscode": "^1.16.0"
     },
