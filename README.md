@@ -6,7 +6,7 @@ VSCode client for pomodoro server [votabia](https://github.com/tagip/votabia).
 
 Displays the pomodoro status on the status bar :
 
-![Working status + timer](https://mikaoelitiana.name/misc/images/working.png)
+![Animated break countdown](https://mikaoelitiana.name/misc/images/animated-break.gif)
 
 ## Extension Settings
 
