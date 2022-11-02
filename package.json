@@ -44,6 +44,6 @@
         "@types/mocha": "^2.2.42"
     },
     "dependencies": {
-        "socket.io-client": "^2.0.3"
+        "socket.io-client": "^2.5.0"
     }
 }
